@@ -31,7 +31,7 @@ TOKEN = os.environ["TELEGRAM_TOKEN"]
 CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
 ARCHIVO_VISTOS = "seen.json"
 CABECERAS = {"User-Agent": "Mozilla/5.0 (compatible; BotOfertas/1.0)"}
-
+PRECIO = r"(\d{1,3}(?:\.\d{3})+(?:,\d{1,2})?|\d+(?:[.,]\d{1,2})?)\s?€"
 
 def cargar_vistos():
     if os.path.exists(ARCHIVO_VISTOS):
